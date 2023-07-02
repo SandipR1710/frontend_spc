@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+.card{
+    display: flex;
+
+}
+.first{
+    width:450px;
+    height: 350px;
+    background-color: hsl(244, 38%, 16%);
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    border-radius: 7px 0 0 7px;
+}
+.heading{
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+.stats{
+    text-transform: uppercase;
+}
+.num{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+.des{
+    font-size: 12px;
+    font-family: 'Lexend Deca',sans-serif;
+}
+.text{
+    width:280px;
+    font-family: 'Lexend Deca',sans-serif;
+    font-size: 11px;
+    line-height: 20px;
+    margin-top:25px;
+    margin-bottom: auto;
+    color:hsl(244, 17%, 69%);
+}
+.insight{
+    color: hsl(277, 64%, 61%);
+}
+.stats{
+    display: flex;
+    gap:50px;
+}
+.second{
+    width:450px;
+    height:350px;
+    background-image: url('images/image-header-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 0 7px 7px 0;;
+}
+.color{
+    width:450px;
+    height:350px;
+    background-color: hsla(277, 72%, 42%, 0.459);
+}
+@media (max-width:600px){
+    .card{
+        flex-direction:column-reverse;
+        padding:20px;
+    }
+    .first{
+        width:300px;
+        height:460px;
+        border-radius:0 0 7px 7px;
+        text-align: center;
+        padding:25px;
+    }
+    .second{
+        width:300px;
+        height:220px;
+        background-image: url('images/image-header-mobile.jpg');
+        border-radius: 7px 7px 0 0;
+    }
+    .text{
+        width:100%;
+        text-align: center;
+        font-size: 14px;
+        margin-top: 15px;
+        margin-bottom: auto;
+    }
+    .heading{
+        font-size: 24px;;
+    }
+    .stats{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:30px;
+    }
+}
